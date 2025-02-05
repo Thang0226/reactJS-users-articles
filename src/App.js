@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Users from "./components/Users";
 import CreateUserForm from "./components/CreateUserForm";
 import UserDetail from "./components/UserDetail";
-import UserArticle from "./components/UserArticle";
+import UserArticle from "./components/UserArticles";
 
 function App() {
   return (

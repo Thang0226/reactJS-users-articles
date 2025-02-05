@@ -1,65 +1,9 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "John Doe",
-      "email": "john@gmail.com",
-      "articles": [
-        {
-          "id": 1,
-          "title": "First Article",
-          "content": "This is the first article"
-        },
-        {
-          "id": 2,
-          "title": "Second Article",
-          "content": "This is the second article"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Thang",
-      "email": "thang@gmail.com",
-      "articles": [
-        {
-          "id": 1,
-          "title": "First Article",
-          "content": "This is the first article"
-        },
-        {
-          "id": 2,
-          "title": "Second Article",
-          "content": "This is the second article"
-        },
-        {
-          "id": 3,
-          "title": "Third Article",
-          "content": "This is the 3rd article"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Dung",
-      "email": "dung@gmail.com",
-      "articles": [
-        {
-          "id": 1,
-          "title": "First Article",
-          "content": "This is the 1st article"
-        },
-        {
-          "id": 2,
-          "title": "Second Article",
-          "content": "This is the 2nd article"
-        },
-        {
-          "id": 3,
-          "title": "Third Article",
-          "content": "This is the 3rd article"
-        }
-      ]
+      "name": "Nguyễn Thắng",
+      "email": "thang.nd0226@gmail.com",
+      "id": 2
     }
   ]
 }
