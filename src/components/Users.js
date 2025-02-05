@@ -10,8 +10,7 @@ export default function Users() {
   const getUsers = async () => {
     try {
       const response = await axios.get(API_URL);
-      console.log(response.data); // Log response data
-      setUsers(response.data); // Set the response data to state
+      setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);
     }
