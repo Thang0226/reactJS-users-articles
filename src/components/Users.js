@@ -2,9 +2,12 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { API_URL } from "../constants/constants";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { editUser } from "../redux/action";
 
 export default function Users() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [users, setUsers] = useState([]);
 
   const getUsers = async () => {
@@ -22,6 +25,11 @@ export default function Users() {
 
   const showCreateForm = () => {
     navigate("/create");
+  };
+
+  const handleEdit = (id) => {
+    navigate("/edit");
+    dispatch(editUser(id));
   };
 
   const handleDelete = async (id) => {
@@ -52,7 +60,12 @@ export default function Users() {
               <td className="text-center">{user.id}</td>
               <td>{user.name}</td>
               <td>
-                <button className="btn btn-primary me-2">Edit</button>
+                <button
+                  onClick={() => handleEdit(user.id)}
+                  className="btn btn-primary me-2"
+                >
+                  Edit
+                </button>
                 <button
                   onClick={() => handleDelete(user.id)}
                   className="btn btn-danger"
