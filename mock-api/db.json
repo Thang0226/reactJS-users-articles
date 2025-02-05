@@ -23,23 +23,6 @@
       ]
     },
     {
-      "name": "abcd",
-      "email": "12345",
-      "id": 4,
-      "articles": [
-        {
-          "id": 1,
-          "title": "First Article",
-          "content": "This is the content"
-        },
-        {
-          "id": 2,
-          "title": "2nd Article",
-          "content": "This is the content"
-        }
-      ]
-    },
-    {
       "name": "Dung",
       "email": "dung@gmail.com",
       "id": 5,
@@ -55,34 +38,9 @@
           "id": 2
         },
         {
-          "title": "123456",
-          "content": "123",
-          "id": 3
-        },
-        {
-          "title": "123456",
-          "content": "123",
-          "id": 4
-        },
-        {
-          "title": "123456",
-          "content": "123",
-          "id": 5
-        },
-        {
-          "title": "sdfsd",
-          "content": "sdfsdf",
-          "id": 6
-        },
-        {
-          "title": "sdfsd",
-          "content": "sdfsdf345",
-          "id": 7
-        },
-        {
-          "title": "sdfsd435345",
-          "content": "sdfsdf345",
-          "id": 8
+          "title": "Hello World",
+          "content": "123123",
+          "id": 9
         }
       ]
     },

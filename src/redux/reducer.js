@@ -9,8 +9,8 @@ export const userReducer = (state = initialState, action) => {
     case "EDIT_USER_SUCCESS":
       alert("Edit User successfully");
       return state;
-    case "ADD_ARTICLE_SUCCESS":
-      alert("Added new article of user");
+    case "UPDATE_ARTICLE_SUCCESS":
+      alert("Modified articles of user");
       return { ...state, user: action.payload };
     default:
       return state;

@@ -96,7 +96,7 @@ export default function UserDetail() {
         </button>
       </form>
       <div className="mt-4 mb-3">
-        <UserArticles user={user} />
+        <UserArticles />
       </div>
     </div>
   );

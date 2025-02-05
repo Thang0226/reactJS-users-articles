@@ -32,6 +32,16 @@ export const submitAddNewArticle = (article) => {
       user = { ...user, articles: [fullArticle] };
     }
     const res = await axios.put(`${API_URL}/${user.id}`, user);
-    dispatch({ type: "ADD_ARTICLE_SUCCESS", payload: res.data }); // use res.data to synchronise server state & client state
+    dispatch({ type: "UPDATE_ARTICLE_SUCCESS", payload: res.data }); // use res.data to synchronise server state & client state
+  };
+};
+
+export const deleteArticle = (id) => {
+  return async (dispatch, getState) => {
+    let user = getState().user;
+    let articles = user.articles;
+    user.articles = articles.filter((article) => article.id !== id);
+    const res = await axios.put(`${API_URL}/${user.id}`, user);
+    dispatch({ type: "UPDATE_ARTICLE_SUCCESS", payload: res.data });
   };
 };

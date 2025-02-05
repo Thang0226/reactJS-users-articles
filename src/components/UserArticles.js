@@ -1,7 +1,16 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { deleteArticle } from "../redux/action";
 
-export default function UserArticles({ user }) {
+export default function UserArticles() {
+  const dispatch = useDispatch();
+  let user = useSelector((state) => state.user);
   let articles = user.articles ? user.articles : [];
+
+  const handleEdit = (id) => {};
+
+  const handleDelete = (id) => {
+    dispatch(deleteArticle(id));
+  };
 
   return (
     <div className="container mt-5">
@@ -17,8 +26,18 @@ export default function UserArticles({ user }) {
             <tr key={article.id}>
               <td>{article.title}</td>
               <td>
-                <button className="btn btn-primary me-2">Edit</button>
-                <button className="btn btn-danger">Delete</button>
+                <button
+                  onClick={() => handleEdit(article.id)}
+                  className="btn btn-primary me-2"
+                >
+                  Edit
+                </button>
+                <button
+                  onClick={() => handleDelete(article.id)}
+                  className="btn btn-danger"
+                >
+                  Delete
+                </button>
               </td>
             </tr>
           ))}
