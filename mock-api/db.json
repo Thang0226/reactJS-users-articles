@@ -1,23 +1,6 @@
 {
   "users": [
     {
-      "name": "Dung",
-      "email": "dung@gmail.com",
-      "id": 5,
-      "articles": [
-        {
-          "title": "123456",
-          "content": "123456\nToday is fun",
-          "id": 1
-        },
-        {
-          "title": "Hello World",
-          "content": "123123",
-          "id": 9
-        }
-      ]
-    },
-    {
       "name": "Nguyen Khac Nhat",
       "email": "thang.nd0226@gmail.com",
       "id": 6
@@ -25,7 +8,26 @@
     {
       "name": "Nguyễn Thắng 123",
       "email": "234234234",
-      "id": 7
+      "id": 7,
+      "articles": [
+        {
+          "title": "sdafsdfasdf123",
+          "content": "123123123123",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "name": "Nguyễn Thắng 356",
+      "email": "thang.nd0226@gmail.com",
+      "id": 8,
+      "articles": [
+        {
+          "title": "123",
+          "content": "1231231312kjsdflksjdf",
+          "id": 2
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "reactjs-users-articles",
   "version": "0.1.0",
-  "homepage": "https://Thang0226.github.io/reactJS-users-articles",
+  "homepage": "https://thang0226.github.io/reactJS-users-articles",
   "private": true,
   "dependencies": {
     "axios": "^1.7.9",
