@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/reactJS-users-articles/static/css/main.fb961db8.css",
+    "main.js": "/reactJS-users-articles/static/js/main.8bbdba66.js",
+    "static/media/logo.svg": "/reactJS-users-articles/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/reactJS-users-articles/index.html",
+    "main.fb961db8.css.map": "/reactJS-users-articles/static/css/main.fb961db8.css.map",
+    "main.8bbdba66.js.map": "/reactJS-users-articles/static/js/main.8bbdba66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb961db8.css",
+    "static/js/main.8bbdba66.js"
+  ]
+}
