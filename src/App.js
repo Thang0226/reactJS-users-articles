@@ -9,14 +9,14 @@ import ArticleDetail from "./components/ArticleDetail";
 function App() {
   return (
     <div className="container">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Users />} />
           <Route path="/create" element={<CreateUserForm />} />
           <Route path="/edit" element={<UserDetail />} />
           <Route path="/article" element={<ArticleDetail />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
