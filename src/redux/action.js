@@ -36,7 +36,29 @@ export const submitAddNewArticle = (article) => {
   };
 };
 
-export const editArticle = (id) => {};
+export const editArticle = (id) => {
+  return (dispatch, getState) => {
+    let user = getState().user;
+    let article = user.articles.find((item) => item.id === id);
+    dispatch({ type: "EDIT_ARTICLE", payload: article });
+  };
+};
+
+export const changeArticle = (article) => {
+  return { type: "EDIT_ARTICLE", payload: article };
+};
+
+export const submitEditArticle = () => {
+  return async (dispatch, getState) => {
+    let user = getState().user;
+    let article = getState().article;
+    let index = user.articles.findIndex((item) => item.id === article.id);
+    user.articles[index] = article;
+
+    const res = await axios.put(`${API_URL}/${user.id}`, user);
+    dispatch({ type: "UPDATE_ARTICLE_SUCCESS", payload: res.data });
+  };
+};
 
 export const deleteArticle = (id) => {
   return async (dispatch, getState) => {

@@ -1,5 +1,6 @@
 const initialState = {
   user: {},
+  article: {},
 };
 
 export const userReducer = (state = initialState, action) => {
@@ -10,8 +11,10 @@ export const userReducer = (state = initialState, action) => {
       alert("Edit User successfully");
       return state;
     case "UPDATE_ARTICLE_SUCCESS":
-      alert("Modified articles of user");
+      alert("Modified article(s) of user");
       return { ...state, user: action.payload };
+    case "EDIT_ARTICLE":
+      return { ...state, article: action.payload };
     default:
       return state;
   }

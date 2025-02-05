@@ -1,15 +1,26 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { editUser } from "../redux/action";
+import { useNavigate, Link } from "react-router-dom";
+import { editUser, changeArticle, submitEditArticle } from "../redux/action";
 
 export default function ArticleDetail() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   let user = useSelector((state) => state.user);
+  let article = useSelector((state) => state.article);
 
   const handleEditUser = (id) => {
     navigate("/edit");
     dispatch(editUser(id));
+  };
+
+  const handleChangeArticle = (e) => {
+    let newArticle = { ...article, [e.target.name]: e.target.value };
+    dispatch(changeArticle(newArticle));
+  };
+
+  const handleSubmitArticle = (e) => {
+    e.preventDefault();
+    dispatch(submitEditArticle());
   };
 
   return (
@@ -31,14 +42,14 @@ export default function ArticleDetail() {
         />
       </div>
       <button
-        onclick={() => handleEditUser(user.id)}
+        onClick={() => handleEditUser(user.id)}
         className="btn btn-success"
       >
         Edit User
       </button>
 
       <form onSubmit={handleSubmitArticle}>
-        <div className="mb-3">
+        <div className="mb-3 mt-4">
           <label className="form-label fw-bold">Title</label>
           <input
             type="text"
@@ -58,7 +69,7 @@ export default function ArticleDetail() {
           ></textarea>
         </div>
         <button type="submit" className="btn btn-success">
-          Add Article
+          Update Article
         </button>
       </form>
     </div>

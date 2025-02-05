@@ -5,19 +5,19 @@ import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
 import Users from "./components/Users";
 import CreateUserForm from "./components/CreateUserForm";
 import UserDetail from "./components/UserDetail";
-import UserArticle from "./components/UserArticles";
+import ArticleDetail from "./components/ArticleDetail";
 
 function App() {
   return (
     <div className="container">
-      <BrowserRouter basename="reactJS-users-articles">
+      <HashRouter basename="reactJS-users-articles">
         <Routes>
           <Route path="/" element={<Users />} />
           <Route path="/create" element={<CreateUserForm />} />
           <Route path="/edit" element={<UserDetail />} />
-          <Route path="/article" element={<UserArticle />} />
+          <Route path="/article" element={<ArticleDetail />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
