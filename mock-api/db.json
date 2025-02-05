@@ -3,16 +3,28 @@
     {
       "name": "Nguyễn Thắng",
       "email": "thang.nd0226@gmail.com",
-      "id": 2
+      "id": 3,
+      "articles": [
+        {
+          "title": "asdfasdf",
+          "content": "123123123",
+          "id": 1
+        },
+        {
+          "title": "asdfasdf234234234",
+          "content": "123123123",
+          "id": 2
+        },
+        {
+          "title": "sdfsdfsd",
+          "content": "12312123",
+          "id": 3
+        }
+      ]
     },
     {
-      "name": "Nguyễn Thắng",
-      "email": "thang.nd0226@gmail.com",
-      "id": 3
-    },
-    {
-      "name": "abc",
-      "email": "123",
+      "name": "abcd",
+      "email": "12345",
       "id": 4,
       "articles": [
         {
@@ -26,6 +38,58 @@
           "content": "This is the content"
         }
       ]
+    },
+    {
+      "name": "Dung",
+      "email": "dung@gmail.com",
+      "id": 5,
+      "articles": [
+        {
+          "title": "123",
+          "content": "123",
+          "id": 1
+        },
+        {
+          "title": "123",
+          "content": "123",
+          "id": 2
+        },
+        {
+          "title": "123456",
+          "content": "123",
+          "id": 3
+        },
+        {
+          "title": "123456",
+          "content": "123",
+          "id": 4
+        },
+        {
+          "title": "123456",
+          "content": "123",
+          "id": 5
+        },
+        {
+          "title": "sdfsd",
+          "content": "sdfsdf",
+          "id": 6
+        },
+        {
+          "title": "sdfsd",
+          "content": "sdfsdf345",
+          "id": 7
+        },
+        {
+          "title": "sdfsd435345",
+          "content": "sdfsdf345",
+          "id": 8
+        }
+      ]
+    },
+    {
+      "name": "Nguyen Khac Nhat",
+      "email": "thang.nd0226@gmail.com",
+      "id": 6
     }
   ]
 }

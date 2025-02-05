@@ -7,3 +7,31 @@ export const editUser = (id) => {
     dispatch({ type: "EDIT_USER", payload: response.data });
   };
 };
+
+export const changeUser = (user) => {
+  return { type: "EDIT_USER", payload: user };
+};
+
+export const submitEditUser = () => {
+  return async (dispatch, getState) => {
+    const state = getState();
+    let user = state.user;
+    const res = await axios.put(`${API_URL}/${user.id}`, user);
+    dispatch({ type: "EDIT_USER_SUCCESS", payload: res.data });
+  };
+};
+
+export const submitAddNewArticle = (article) => {
+  return async (dispatch, getState) => {
+    let user = getState().user;
+    if (user.articles) {
+      let fullArticle = { ...article, id: user.articles.length + 1 };
+      user.articles = [...user.articles, fullArticle];
+    } else {
+      let fullArticle = { ...article, id: 1 };
+      user = { ...user, articles: [fullArticle] };
+    }
+    const res = await axios.put(`${API_URL}/${user.id}`, user);
+    dispatch({ type: "ADD_ARTICLE_SUCCESS", payload: res.data }); // use res.data to synchronise server state & client state
+  };
+};

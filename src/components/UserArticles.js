@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux";
 
-export default function UserArticles() {
-  const user = useSelector((state) => state.user);
-  const articles = user.articles || [];
+export default function UserArticles({ user }) {
+  let articles = user.articles ? user.articles : [];
 
   return (
     <div className="container mt-5">

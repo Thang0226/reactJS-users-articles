@@ -2,18 +2,36 @@ import UserArticles from "./UserArticles";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import {
+  changeUser,
+  submitEditUser,
+  submitAddNewArticle,
+} from "../redux/action";
 
 export default function UserDetail() {
+  const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
   const [article, setArticle] = useState({});
 
-  const handleChangeUser = (e) => {};
+  const handleChangeUser = (e) => {
+    let newUser = { ...user, [e.target.name]: e.target.value };
+    dispatch(changeUser(newUser));
+  };
 
-  const handleSubmitUser = (e) => {};
+  const handleSubmitUser = (e) => {
+    e.preventDefault();
+    dispatch(submitEditUser());
+  };
 
-  const handleChangeArticle = (e) => {};
+  const handleChangeArticle = (e) => {
+    setArticle({ ...article, [e.target.name]: e.target.value });
+  };
 
-  const handleSubmitArticle = (e) => {};
+  const handleSubmitArticle = (e) => {
+    e.preventDefault();
+    dispatch(submitAddNewArticle(article));
+  };
 
   return (
     <div className="container mt-5">
@@ -50,7 +68,7 @@ export default function UserDetail() {
       </form>
 
       <div className="mb-3 mt-4">
-        <h3>Article</h3>
+        <h3>User's Articles</h3>
       </div>
       <form onSubmit={handleSubmitArticle}>
         <div className="mb-3">
@@ -78,7 +96,7 @@ export default function UserDetail() {
         </button>
       </form>
       <div className="mt-4 mb-3">
-        <UserArticles />
+        <UserArticles user={user} />
       </div>
     </div>
   );
