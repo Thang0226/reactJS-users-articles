@@ -10,14 +10,14 @@ import ArticleDetail from "./components/ArticleDetail";
 function App() {
   return (
     <div className="container">
-      <HashRouter basename="reactJS-users-articles">
+      <BrowserRouter basename="reactJS-users-articles">
         <Routes>
           <Route path="/" element={<Users />} />
           <Route path="/create" element={<CreateUserForm />} />
           <Route path="/edit" element={<UserDetail />} />
           <Route path="/article" element={<ArticleDetail />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
