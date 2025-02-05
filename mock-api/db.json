@@ -13,7 +13,19 @@
     {
       "name": "abc",
       "email": "123",
-      "id": 4
+      "id": 4,
+      "articles": [
+        {
+          "id": 1,
+          "title": "First Article",
+          "content": "This is the content"
+        },
+        {
+          "id": 2,
+          "title": "2nd Article",
+          "content": "This is the content"
+        }
+      ]
     }
   ]
 }

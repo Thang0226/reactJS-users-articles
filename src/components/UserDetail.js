@@ -30,7 +30,7 @@ export default function UserDetail() {
             type="text"
             className="form-control"
             name="name"
-            value={user.name}
+            value={user.name || ""}
             onChange={handleChangeUser}
           />
         </div>
@@ -40,7 +40,7 @@ export default function UserDetail() {
             type="text"
             className="form-control"
             name="email"
-            value={user.email}
+            value={user.email || ""}
             onChange={handleChangeUser}
           />
         </div>
@@ -77,7 +77,7 @@ export default function UserDetail() {
           Add Article
         </button>
       </form>
-      <div className="mt-4">
+      <div className="mt-4 mb-3">
         <UserArticles />
       </div>
     </div>
