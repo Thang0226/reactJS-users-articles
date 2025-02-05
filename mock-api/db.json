@@ -3,7 +3,14 @@
     {
       "name": "Nguyen Khac Nhat",
       "email": "thang.nd0226@gmail.com",
-      "id": 6
+      "id": 6,
+      "articles": [
+        {
+          "title": "1231231123",
+          "content": "1231312312312;1231;23123123\nsdfsdf",
+          "id": 1
+        }
+      ]
     },
     {
       "name": "Nguyễn Thắng 123",
@@ -18,13 +25,13 @@
       ]
     },
     {
-      "name": "Nguyễn Thắng 356",
-      "email": "thang.nd0226@gmail.com",
-      "id": 8,
+      "name": "The 123",
+      "email": "chimsedinang@gmail.com",
+      "id": 9,
       "articles": [
         {
-          "title": "123",
-          "content": "1231231312kjsdflksjdf",
+          "title": "Hello World",
+          "content": "hello world 123123123123\nsldfjalsjflaskjdflksjdfsdf;",
           "id": 2
         }
       ]

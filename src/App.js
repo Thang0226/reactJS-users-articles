@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
@@ -10,7 +9,7 @@ import ArticleDetail from "./components/ArticleDetail";
 function App() {
   return (
     <div className="container">
-      <BrowserRouter basename="reactJS-users-articles">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Users />} />
           <Route path="/create" element={<CreateUserForm />} />
