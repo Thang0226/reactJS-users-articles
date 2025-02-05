@@ -83,13 +83,12 @@ export default function UserDetail() {
         </div>
         <div className="mb-3">
           <label className="form-label fw-bold">Content</label>
-          <input
-            type="text"
+          <textarea
             className="form-control"
             name="content"
             value={article.content || ""}
             onChange={handleChangeArticle}
-          />
+          ></textarea>
         </div>
         <button type="submit" className="btn btn-success">
           Add Article

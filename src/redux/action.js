@@ -36,6 +36,8 @@ export const submitAddNewArticle = (article) => {
   };
 };
 
+export const editArticle = (id) => {};
+
 export const deleteArticle = (id) => {
   return async (dispatch, getState) => {
     let user = getState().user;

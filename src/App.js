@@ -11,10 +11,16 @@ function App() {
   return (
     <div className="container">
       <Routes>
-        <Route path="/" element={<Users />} />
-        <Route path="/create" element={<CreateUserForm />} />
-        <Route path="/edit" element={<UserDetail />} />
-        <Route path="/article" element={<UserArticle />} />
+        <Route path="/reactJS-users-articles" element={<Users />} />
+        <Route
+          path="/reactJS-users-articles/create"
+          element={<CreateUserForm />}
+        />
+        <Route path="/reactJS-users-articles/edit" element={<UserDetail />} />
+        <Route
+          path="/reactJS-users-articles/article"
+          element={<UserArticle />}
+        />
       </Routes>
     </div>
   );
