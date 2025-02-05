@@ -1,28 +1,6 @@
 {
   "users": [
     {
-      "name": "Nguyễn Thắng",
-      "email": "thang.nd0226@gmail.com",
-      "id": 3,
-      "articles": [
-        {
-          "title": "asdfasdf",
-          "content": "123123123",
-          "id": 1
-        },
-        {
-          "title": "asdfasdf234234234",
-          "content": "123123123",
-          "id": 2
-        },
-        {
-          "title": "sdfsdfsd",
-          "content": "12312123",
-          "id": 3
-        }
-      ]
-    },
-    {
       "name": "Dung",
       "email": "dung@gmail.com",
       "id": 5,
